@@ -1,0 +1,90 @@
+@mixin absolute_center(){
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+@mixin d_inline($vert: middle) {
+    display: inline-block;
+    vertical-align: $vert;
+}
+
+@mixin bg_cover() {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@mixin ver_mid() {
+    position: relative;
+    top: 50%;
+    @include transform(translateY(-50%));
+}
+@mixin backCover($height: 200px){
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: $height;
+}
+
+@mixin bCover(){
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+@mixin short_flex($align: center, $justify: center, $wrap: nowrap) {
+    @include display(flex);
+    @include align-items($align);
+    @include justify-content($justify);
+    @include flex-wrap($wrap);
+}
+
+@mixin hover{
+    @media screen and (min-width: 1025px){
+        &:hover{
+            @content;
+        }
+    }
+}
+
+@mixin anim($offset: 0s,$time: 0.3s, $el: all){
+    @include transition( $el $time cubic-bezier(0.25, 0.1,0.25, 1) $offset );
+}
+@mixin media_width($width: 1199px){
+    @media screen and (max-width: $width) {
+        @content;
+    }
+}
+@mixin media_from_to($min: 1025px, $max: 1199px) {
+    @media screen and (min-width: $min) and (max-width: $max) {
+        @content;
+    }
+}
+@mixin media_sm{
+    @media screen and (max-width: 1024px) {
+        @content;
+    }
+}
+@mixin media_to_sm {
+    @media screen and (min-width: 1025px) {
+        @content;
+    }
+}
+@mixin media_only_sm {
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+        @content;
+    }
+}
+@mixin media_xs{
+    @media screen and (max-width: 767px) {
+        @content;
+    }
+}
+@mixin media_to_xs {
+    @media screen and (min-width: 768px) {
+        @content;
+    }
+}

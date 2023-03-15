@@ -1,0 +1,35 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Epic Blank\n"
+
+#: ../404.php:9
+msgid "Nothing to do here..."
+msgstr "Nic nie znaleziono..."
+
+#: ../loop.php:7
+msgid "Read more"
+msgstr "Czytaj więcej"
+
+#: ../loop.php:9
+msgid "Sorry, no posts matched your criteria."
+msgstr "Nie znaleziono wpisów pasujących do podanych kryteriów."
+
+#: ../header.php:33
+msgid "Expand"
+msgstr "Rozwiń"
+
+#: ../page.php:17
+msgid "Nothing to display."
+msgstr "Nic do wyświetlenia."
+
+#: ../search.php:17
+msgid "%s Search Results for "
+msgstr "Znaleziono %s wyników dla "
+
+#: ../searchform.php:3
+msgid "Search"
+msgstr "Szukaj"
+
+#: ../single.php:18
+msgid "Nothing to display."
+msgstr "Nic do wyświetlenia."

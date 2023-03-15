@@ -1,0 +1,14 @@
+@import '../bourbon/bourbon';
+@include font-face("source-sans-pro", "/fonts/source-sans-pro/source-sans-pro-regular", normal, $file-formats: eot woff2 woff);
+
+@font-face {
+    font-family: 'Neutra Text';
+    src: url('../fonts/NeutraText/NeutraText-Bold.eot');
+    src: url('../fonts/NeutraText/NeutraText-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/NeutraText/NeutraText-Bold.woff2') format('woff2'),
+        url('../fonts/NeutraText/NeutraText-Bold.woff') format('woff'),
+        url('../fonts/NeutraText/NeutraText-Bold.ttf') format('truetype'),
+        url('../fonts/NeutraText/NeutraText-Bold.svg#NeutraText-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}

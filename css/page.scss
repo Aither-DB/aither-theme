@@ -1,0 +1,234 @@
+@import 'bourbon/bourbon';
+@import 'mixins/colors';
+@import 'mixins/mixins';
+
+
+/*===================================
+=            Text format            =
+===================================*/
+
+.heading_80{
+	font-size: 80px;
+	font-weight: 700;
+	line-height: (84/80);
+	letter-spacing: 4.41px;
+	margin-top: 100px !important;
+}
+.heading_26{
+	text-shadow: 0 2px 4px rgba(0, 0, 0, 0.35);
+	font-size: 20px;
+	font-weight: 400;
+	line-height: (31/26);
+	letter-spacing: 0.07px;
+	margin: 0;
+}
+.heading_22{
+	font-size: 22px;
+	font-weight: 300;
+	line-height: (34/22);
+	letter-spacing: 0.66px;
+	margin: 0;
+}
+
+@include media_sm{
+	.heading_80{
+		font-size: 64px;
+		line-height: (67/64);
+	}
+	.heading_26{
+		font-size: 21px;
+		line-height: (25/21);
+	}
+}
+@include media_xs{
+	.heading_80{
+		font-size: 30px;
+		letter-spacing: 1.65px;
+	}
+	.heading_26{
+		font-size: 18px;
+		line-height: (24/18);
+	}
+	.heading_22{
+		font-size: 15px;
+		line-height: (24/15);
+		letter-spacing: 0.45px;
+	}
+}
+
+/*=====  End of Text format  ======*/
+
+
+/*=================================
+=            Animation            =
+=================================*/
+
+.element_anim,.element_anim_1{
+	opacity: 0;
+	@include transform( translateY(50px) );
+	@include transition( all 0.6s cubic-bezier(0.25, 0.1,0.25, 1) 0s );
+	&.start_anim{
+		opacity: 1;
+		@include transform( translateY(0px) );
+
+		@media screen and (min-width: 768px){
+			&.out_anim {
+				opacity: 0;
+			}
+		}
+	}
+}
+
+.element_anim_2{
+	opacity: 0;
+	@include transform( translateY(50px) );
+	@include transition( all 0.6s cubic-bezier(0.25, 0.1,0.25, 1) 0.1s );
+	&.start_anim{
+		opacity: 1;
+		@include transform( translateY(0px) );
+
+		@media screen and (min-width: 768px){
+			&.out_anim {
+				opacity: 0;
+			}
+		}
+	}
+}
+.element_anim_3{
+	opacity: 0;
+	@include transform( translateY(50px) );
+	@include transition( all 0.6s cubic-bezier(0.25, 0.1,0.25, 1) 0.2s );
+	&.start_anim{
+		opacity: 1;
+		@include transform( translateY(0px) );
+
+		@media screen and (min-width: 768px){
+			&.out_anim {
+				opacity: 0;
+			}
+		}
+	}
+}
+.element_anim_4{
+	opacity: 0;
+	@include transform( translateY(50px) );
+	@include transition( all 0.6s cubic-bezier(0.25, 0.1,0.25, 1) 0.3s );
+	&.start_anim{
+		opacity: 1;
+		@include transform( translateY(0px) );
+
+		@media screen and (min-width: 768px){
+			&.out_anim {
+				opacity: 0;
+			}
+		}
+	}
+}
+.element_anim_5{
+	opacity: 0;
+	@include transform( translateY(50px) );
+	@include transition( all 0.6s cubic-bezier(0.25, 0.1,0.25, 1) 0.4s );
+	&.start_anim{
+		opacity: 1;
+		@include transform( translateY(0px) );
+
+		@media screen and (min-width: 768px){
+			&.out_anim {
+				opacity: 0;
+			}
+		}
+	}
+}
+.fade_anim_1{
+	opacity: 0;
+	@include transition( all 0.6s cubic-bezier(0.25, 0.1,0.25, 1) 0s );
+	&.start_anim{
+		opacity: 1;
+
+		@media screen and (min-width: 768px){
+			&.out_anim {
+				opacity: 0;
+			}
+		}
+	}
+}
+.fade_anim_2{
+	opacity: 0;
+	@include transition( all 0.6s cubic-bezier(0.25, 0.1,0.25, 1) 0.1s );
+	&.start_anim{
+		opacity: 1;
+
+		@media screen and (min-width: 768px){
+			&.out_anim {
+				opacity: 0;
+			}
+		}
+	}
+}
+.fade_anim_3{
+	opacity: 0;
+	@include transition( all 0.6s cubic-bezier(0.25, 0.1,0.25, 1) 0.2s );
+	&.start_anim{
+		opacity: 1;
+
+		@media screen and (min-width: 768px){
+			&.out_anim {
+				opacity: 0;
+			}
+		}
+	}
+}
+
+/*=====  End of Animation  ======*/
+.landing_page {
+	.blue_bar.sec_ser_temp .ltos_wrap {
+		margin-bottom: 50px;
+	}
+	.blue_bar.sec_ser_temp {
+		overflow: hidden;
+		padding-top: 498px;
+	}
+	.blue_bar_wrap {
+		padding-top: 40px;
+		overflow-y: auto;
+		max-height: calc(100vh - 110px);
+		.blue_title {
+			.line {
+				width: 100% !important;
+			}
+		}
+	}
+}
+.iframe_menu_link{
+	cursor: pointer;
+}
+.iframe_wrap{
+	width: 100%; 
+	height: 100%;
+	padding-top: 50px;
+	// padding: 50px 0;
+}
+// @include media_sm {
+// 	.iframe_wrap {
+// 		height: 100vh;
+// 	}
+// }
+
+@include media_sm {
+	.landing_page {
+		.blue_bar.sec_ser_temp {
+			padding-top: 348px;
+		}
+		.blue_bar_wrap {
+			max-height: calc(100vh - 80px);
+		}
+	}
+}
+
+@include media_xs {
+	.landing_page {
+		.blue_bar.sec_ser_temp {
+			padding-bottom: 0;
+		}
+	}
+}
